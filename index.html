@@ -32,14 +32,23 @@
       <header></header>
       <!-- main content of the page -->
       <main>
-        <section class="text-input">
+        <section class="value-converter">
           <div class="wrapper">
-            <form>
-              <label for="char">Enter you Character</label>
-              <input type="text" value="" />
-              <p id="display"></p>
-              <input type="button" value="submit" />
-            </form>
+            <div class="value-container">
+              <form>
+                <label for="char">Enter you Character</label>
+                <input
+                  size="20"
+                  placeholder="Press a key"
+                  type="text"
+                  onkeydown="getAscii(event)"
+                  maxlength="1"
+                  id="inputbox"
+                />
+                <span><p id="display">Key: and the Ascii Value :</p></span>
+                <button class="clear-btn" onclick="clearBtn()">Clear</button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
