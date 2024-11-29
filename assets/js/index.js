@@ -23,7 +23,7 @@ function getAscii(event) {
       ).textContent = `Key:${key} and the Ascii Value: ${Value}`;
     } else {
       document.getElementById("display").textContent =
-        "Error Invalid character";
+        "please Enter a Alphabet Or Number Only";
     }
   }
 }
