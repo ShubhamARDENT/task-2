@@ -36,19 +36,26 @@
           <div class="wrapper">
             <div class="value-container">
               <form>
-                <label for="char">Enter you Character</label>
+                <label for="char">ASCII Value Generator</label>
                 <input
-                  size="20"
+                  size="23"
                   placeholder="Press a key"
                   type="text"
-                  onkeydown="getAscii(event)"
                   maxlength="1"
                   id="inputbox"
                 />
-                <span><p id="display">Key: and the Ascii Value :</p></span>
-                <button class="clear-btn" onclick="clearBtn()">Clear</button>
+                <span
+                  ><p id="output">Key: N/A and the ASCII Value: N/A</p></span
+                >
+                <button class="clear-btn">Clear</button>
               </form>
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="wrapperr">
+            <div class="error-message"></div>
           </div>
         </section>
       </main>
