@@ -15,7 +15,7 @@ function getAscii(event) {
   }
 
   if (key.length === 1) {
-    const Char = /^[a-zA-Z0-9]$/;
+    const Char = /^[a-zA-z0-9]/;
     if (Char.test(key)) {
       let Value = key.charCodeAt(0);
       document.getElementById(
