@@ -14,7 +14,7 @@ function getAscii(event) {
 
   //shows on character from a-z and numbers in input box
   if (key.length === 1) {
-    inputBox.value = key;
+    event.target.value = key;
   }
 
   //check key length and show o/p on display
